@@ -1,0 +1,7 @@
+node_modules/
+dist/
+*.log
+.DS_Store
+
+# 内部の発注メモ（公開しない）
+REQUIREMENTS.md
