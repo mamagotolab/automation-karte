@@ -302,6 +302,20 @@ input[type="number"]:focus {
   font-weight: 700;
 }
 
+.cta-main {
+  margin-top: 0.75rem;
+  font-size: 1.05rem;
+}
+
+.cta-sub {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.cta-sub a {
+  font-weight: 400;
+}
+
 .actions {
   margin-top: 1rem;
 }

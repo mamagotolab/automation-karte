@@ -318,10 +318,12 @@ function renderListSection(title, items) {
 function renderCta() {
   return el('section', { className: 'result-section cta' }, [
     el('h3', { text: 'この診断結果を、そのまま見積もり依頼に使えます。' }),
-    el('p', { text: '出力されたカルテを添えてご相談いただくと、ヒアリングが短くなり、正確なお見積もりが早く出せます。' }),
-    el('ul', {}, [
-      el('li', {}, [externalLink('ご相談はこちら（クラウドワークス）', 'https://crowdworks.jp/public/employees/6942778')]),
-      el('li', {}, [externalLink('ママゴトラボについて', 'https://mamagotolab.com')]),
+    el('p', { text: '下のボタンでコピー、またはダウンロードして、依頼メッセージに貼り付けてください。ヒアリングが短くなり、正確なお見積もりが早く出せます。相談だけ、見積もりだけでも構いません。' }),
+    el('p', { className: 'cta-main' }, [externalLink('ご相談はこちら（クラウドワークス）', 'https://crowdworks.jp/public/employees/6942778')]),
+    el('p', { className: 'cta-sub' }, [
+      externalLink('ココナラ', 'https://coconala.com/users/5986442'),
+      document.createTextNode(' ／ '),
+      externalLink('ママゴトラボについて', 'https://mamagotolab.com'),
     ]),
   ]);
 }
