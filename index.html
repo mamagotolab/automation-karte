@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'none'; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https://cloudflareinsights.com; style-src 'self'; script-src 'self' https://static.cloudflareinsights.com; object-src 'none'; base-uri 'self'; form-action 'self'" />
     <title>業務自動化カルテ｜その作業、自動化できますか？（無料診断）</title>
     <meta name="description" content="普段の作業について質問に答えるだけで、自動化の適性・GAS/VBA/Pythonなど推奨する実現方法・開発者に渡せる要件整理書が無料で手に入る診断アプリ。登録不要、入力内容はブラウザの外に送信されません。" />
     <meta property="og:title" content="業務自動化カルテ｜その作業、自動化できますか？" />
@@ -14,8 +14,14 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="https://mamagotolab.com/images/ogp/automation-karte.png?v=20260915" />
     <link rel="canonical" href="https://mamagotolab.com/automation-karte/" />
-  </head>
+    <link rel="stylesheet" href="/_shared/homelink.css">
+</head>
   <body>
+<div class="mgl-homebar">
+  <a class="mgl-homebar-brand" href="/"><span class="mgl-homebar-mark" aria-hidden="true"></span>ママゴトラボ</a>
+  <span class="mgl-homebar-note">業務自動化の開発ラボ</span>
+  <a class="mgl-homebar-link" href="/">ホームへ<span aria-hidden="true"> →</span></a>
+</div>
     <div id="app"></div>
     <script type="module" src="./src/app.js"></script>
   </body>
